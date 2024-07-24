@@ -105,39 +105,6 @@
   color: white;
 }
 
-@media (max-width: 768px) {
-  .footer-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .footer-partition {
-      display: none;
-  }
-
-  .footer-content {
-      flex-direction: column;
-      align-items: center;
-  }
-  .footer-logo img {
-    max-width: 90%; /* Make the logo stretch relatively */
-    margin-left: -50px; /* Add left margin */
-    max-width: 400px; /* Increase the size of the logo */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 30px; /* Add margin to separate from partition */
-    margin-left: -50px; /* Adjusted margin to the left */
-    border-radius: 200%;
-  }
-
-  .footer-column {
-      padding: 10px 0;
-      text-align: center;
-  }
-
-  .footer-column ul {
-      text-align: left;
-  }
-}
 
 .social-icons {
   display: flex;
@@ -158,4 +125,75 @@
 
 .social-icons a:hover {
   color: lightblue;
+}
+
+/* Media query for devices with a max-width of 768px (tablets and phones) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-partition {
+    display: none;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px; /* Add margin to separate from other elements */
+  }
+
+  .footer-logo img {
+    max-width: 90%; /* Make the logo stretch relatively */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 0; /* Remove right margin */
+    margin-left: 0; /* Remove left margin */
+  }
+
+  .footer-column {
+    padding: 10px 0;
+    text-align: center;
+    width: 100%; /* Make columns full width */
+  }
+
+  .footer-column ul {
+    text-align: left;
+    padding-left: 0; /* Adjust padding for consistency */
+  }
+
+  .social-icons {
+    margin-top: 20px; /* Adjust margin to separate from other elements */
+  }
+}
+
+/* Media query for devices with a max-width of 480px (phones) */
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 20px 0; /* Adjust padding for smaller screens */
+  }
+
+  .footer-logo img {
+    max-width: 80%; /* Further adjust logo size */
+  }
+
+  .footer-column {
+    padding: 5px 0;
+  }
+
+  .footer-column h3 {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .footer-column ul li {
+    margin-bottom: 5px;
+  }
+
+  .social-icons a {
+    font-size: 18px; /* Adjust icon size */
+    margin-right: 10px; /* Adjust spacing between icons */
+  }
 }
