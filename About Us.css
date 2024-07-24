@@ -183,7 +183,7 @@
     justify-content: center;
     padding: var(--padding-93xl) var(--padding-xl);
     box-sizing: border-box;
-    background-image: url(IMAGESSS/ave-calvar-M6XsJwIi6jg-unsplash.jpg);
+    background-image: url( ave-calvar-M6XsJwIi6jg-unsplash.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -2380,7 +2380,7 @@
     font-size: var(--heading-desktop-h2-size);
     color: var(--background-color-primary);
     font-family: var(--text-small-link);
-    background-image: url(IMAGESSS/placeholder.png);
+    background-image: url( placeholder.png);
   }
   .page {
     width: 100%;
